@@ -7,7 +7,7 @@
 |3|[variable](./3.variable.go)|变量声明|Y|
 |4|[constant](./4.constant.go)|常量|Y|
 |5|[for](./5.for.go)|循环|Y|
-|6|[if_else](./6.if_else.go)|判断|Y|
+|6|[if else](./6.if_else.go)|判断|Y|
 |7|[switch](./7.switch.go)|切换|Y|
 |8|[array](./8.array.go)|数组|Y|
 |9|[slice](./9.slice.go)|切片|Y|
