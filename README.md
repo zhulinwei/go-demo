@@ -73,4 +73,4 @@
 |69|[spawning process](./69.spawning_process.go)||N|
 |70|[execing process](./70.execing_process.go)||N|
 |71|[signal](./71.signal.go)||N|
-|72|[exit](./72.exit.go)||N|
+|72|[exit](./72.exit.go)|退出|Y|
