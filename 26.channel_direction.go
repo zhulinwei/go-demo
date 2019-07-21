@@ -2,16 +2,18 @@ package main
 
 import "fmt"
 
-// 将channel当做函数参数传递
-func ping (pings chan <- string, msg string) {
+func ping (pings chan<- string, msg string) {
   pings <- msg
 }
 
-func pong (pings <- chan string, pongs chan <- string) {
-  message := <- pings
+// pings <-cnan string：约束只能发
+// pongs chan<- string: 约束只能收
+func pong (pings <-chan string, pongs chan<- string) {
+  message := <-pings
   pongs <- message
 }
 
+// channel的约束（收、发、收/发）
 func main () {
   pings := make(chan string, 1)
   pongs := make(chan string, 1)
