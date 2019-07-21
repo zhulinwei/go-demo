@@ -1,32 +1,55 @@
 package main
 
 import "fmt"
+import "time"
+import "math/rand"
 
-// 老实说，没太懂
+func test1 () {
+  // 准备几个通道
+  channels := [3]chan int {
+    make(chan int, 1),
+    make(chan int, 1),
+    make(chan int, 1),
+  }
+
+  // 随机选择一个通道，并向他发送元素
+  index := rand.Intn(3)
+  fmt.Println("index is:", index)
+  channels[index] <- index
+
+  // 哪个通道有可取得元素值，哪个对应的分支就会被执行
+  // 只要添加default分支，select块就不会被阻塞
+  select {
+  case <-channels[0]:
+    fmt.Println("the first candidate case is selected.")
+  case <-channels[1]:
+    fmt.Println("the second candidate case is selected.")
+  case <-channels[2]:
+    fmt.Println("the third candidate case is selected.")
+  default:
+    fmt.Println("no candidate case is selected.")
+  }
+}
+
+func test2 () {
+  channel := make(chan int, 1)
+  // 一秒后关闭通道
+  time.AfterFunc(time.Second, func() {
+    close(channel) 
+  })
+
+  select {
+  case _, ok := <-channel:
+    if !ok {
+      fmt.Println("the candidate case is closed")
+      break
+    }
+    fmt.Println("the candidate case is selected")
+  }
+}
+
+// 添加默认分支后可以不用担心select被阻塞
 func main () {
-  message1 := make(chan string)
-  message2 := make(chan string)
-  select {
-  case message3 := <- message1:
-    fmt.Println("received message", message3)
-  default: 
-    fmt.Println("no message received")
-  }
-
-  message4 := "hello"
-  select {
-  case message1 <- message4:
-    fmt.Println("send message", message1)
-  default:
-    fmt.Println("no message send")
-  }
-
-  select {
-  case message5 := <- message1:
-    fmt.Println("received message", message5)
-  case message6 := <- message2:
-    fmt.Println("received message", message6)
-  default:
-    fmt.Println("no activity")
-  }
+  test1()
+  test2()
 }
