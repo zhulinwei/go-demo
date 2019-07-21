@@ -67,7 +67,7 @@
 |63|[command line argument](./63.command_line_argument.go)||N|
 |64|[command line flag](./64.command_line_flag.go)||N|
 |65|[command line subcommand](./65.command_line_subcommand.go)||N|
-|66|[environmentvariable](./66.environment_variable.go)|环境变量|Y|
+|66|[environ mentvariable](./66.environment_variable.go)|环境变量|Y|
 |67|[http client](./67.http_client.go)|http客户端|Y|
 |68|[http server](./68.http_server.go)|http服务端|Y|
 |69|[spawning process](./69.spawning_process.go)||N|
