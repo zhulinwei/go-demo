@@ -23,16 +23,16 @@
 |19|[method](./19.method.go)|方法属性|Y|
 |20|[interface](./20.interface.go)|接口|Y|
 |21|[error](./21.error.go)|错误处理|Y|
-|22|[goroutine](./22.goroutine.go)|goroutine|Y|
+|22|[goroutine](./22.goroutine.go)|go程|Y|
 |23|[channel](./23.channel.go)|通道|Y|
 |24|[channel buffer](./24.channel_buffer.go)|缓冲通道|Y|
 |25|[channel sync](./25.channel_sync.go)|非缓冲通道|Y|
-|26|[channel direction](./26.channel_direction.go)|管道约束|Y|
-|27|[select](./27.select.go)|多重管道|Y|
+|26|[channel direction](./26.channel_direction.go)|通道约束|Y|
+|27|[select](./27.select.go)|多重通道|Y|
 |28|[timeout](./28.timeout.go)|超时|Y|
-|29|[non block channel operation](./29.non_block_channel_operation.go)|无阻塞管道|Y|
-|30|[close channel](./30.close_channel.go)|关闭管道|Y|
-|31|[range channel](./31.range_channel.go)|管道范围|Y|
+|29|[non block channel operation](./29.non_block_channel_operation.go)|无阻塞通道|Y|
+|30|[close channel](./30.close_channel.go)|关闭通道|Y|
+|31|[range channel](./31.range_channel.go)|通道范围|Y|
 |32|[timer](./32.timer.go)|计时器|Y|
 |33|[ticker](./33.ticker.go)|定时器|Y|
 |34|[worker pool](./34.worker_pool.go)|工作池|Y|
