@@ -15,7 +15,7 @@
 |11|[range](./11.range.go)|范围|Y|
 |12|[func](./12.func.go)|函数|Y|
 |13|[multiple return value](./13.multiple_return_value.go)|多返回值|Y|
-|14|[variadic function](./14.variadic_func.go)|参数可变型函数|Y|
+|14|[variadic function](./14.variadic_func.go)|参数可变函数|Y|
 |15|[closure](./15.closure.go)|闭包|Y|
 |16|[recursion](./16.recursion.go)|递归|Y|
 |17|[pointer](./17.pointer.go)|指针|Y|
