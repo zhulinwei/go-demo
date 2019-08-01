@@ -40,7 +40,7 @@
 |36|[rate limit](./36.rate_limit.go)|并发限制|Y|
 |37|[atomic counter](./37.atomic_counter.go)|原子计数器|Y|
 |38|[mutex](./38.mutex.go)|互斥锁|Y|
-|39|[stateful goroutine](./39.stateful_goroutine.go)|有状态的goroutine|Y|
+|39|[stateful goroutine](./39.stateful_goroutine.go)|有状态的go程|Y|
 |40|[sort](./40.sort.go)|排序|Y|
 |41|[sort by function](./41.sort_by_function.go)|条件排序|Y|
 |42|[panic](./42.panic.go)|错误处理|Y|
