@@ -17,11 +17,9 @@ func check(err error) {
 func main() {
 	// 直接写
 	bytes := []byte("hello world")
-	err := ioutil.WriteFile("./test1.txt", bytes, 0644)
-	if err != nil {
+	if err := ioutil.WriteFile("./test1.txt", bytes, 0644); err != nil {
 		panic(err.Error())
 	}
-
 	// 追加写
 	file, err := os.Create("./test2.txt")
 	defer func() {
@@ -29,7 +27,6 @@ func main() {
 			log.Fatalf("os create file fail: %v", err)
 		}
 	}()
-
 	bytes2 := []byte{115, 111, 109, 101, 10}
 	count2, err := file.Write(bytes2)
 	fmt.Printf("wrote %d bytes\n", count2)
@@ -51,4 +48,8 @@ func main() {
 	if err := write.Flush(); err != nil {
 		log.Printf("write flush fail: %v", err)
 	}
+
+	fmt.Println(err)
+	_ = os.RemoveAll("./test1.txt")
+	_ = os.RemoveAll("./test2.txt")
 }
