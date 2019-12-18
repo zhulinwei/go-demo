@@ -75,3 +75,4 @@
 |71|[execing process](./71.execing_process.go)|进程下|Y|
 |72|[signal](./72.signal.go)|信号处理|Y|
 |73|[exit](./73.exit.go)|退出|Y|
+|75|[build with ldflag](./74.build_with_ldflag.go)|变量传递值|Y|
