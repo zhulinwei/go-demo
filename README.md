@@ -36,7 +36,7 @@
 |32|[timer](./32.timer.go)|计时器|Y|
 |33|[ticker](./33.ticker.go)|定时器|Y|
 |34|[worker pool](./34.worker_pool.go)|工作池|Y|
-|35|[wait grounp](./35.wait_grounp.go)|并发等待|Y|
+|35|[wait group](./35.wait_group.go)|并发等待|Y|
 |36|[rate limit](./36.rate_limit.go)|并发限制|Y|
 |37|[atomic counter](./37.atomic_counter.go)|原子计数器|Y|
 |38|[mutex](./38.mutex.go)|互斥锁|Y|
