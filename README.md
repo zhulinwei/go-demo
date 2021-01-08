@@ -76,4 +76,4 @@
 |72|[signal](./72.signal.go)|信号处理|Y|
 |73|[exit](./73.exit.go)|退出|Y|
 |74|[build with ldflag](./74.build_with_ldflag.go)|变量传递值|Y|
-|75|[struct_to_json](./75.struct_to_json.go)|反射实现结构体到json的转换|Y|
+|75|[struct to json](./75.struct_to_json.go)|反射实现结构体到json的转换|Y|
